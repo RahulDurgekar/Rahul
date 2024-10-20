@@ -13,7 +13,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, #7766fc, #5716e3);
+    background: linear-gradient(to right, #b2b5eb, #c7c2e7);
 }
 .header {
     height: 130px;
@@ -39,7 +39,10 @@ body {
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin: 0 20px;
+    margin: 0 auto;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    padding: 20px;
 }
 
 .container .forms {
@@ -196,4 +199,36 @@ body {
 .form .login-signup {
     margin-top: 30px;
     text-align: center;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5716e3;
+
+    padding: 1rem;
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: background-color 0.3s;
+}
+.navbar a:hover {
+    background-color: #7766fc;
+}
+.logo {
+    margin-right: auto;
+}
+.logo img {
+    height: 40px; /* Adjust logo height */
+}
+.content {
+    padding-top: 80px; /* Adjust based on navbar height */
 }
