@@ -40,15 +40,25 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin: 0 auto;
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
     padding: 20px;
 }
+.cont1{
+position: fixed;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  overflow: hidden;
+  background-color: #969af2;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  
 
+}
 .container .forms {
     display: flex;
     align-items: center;
-    height: 440px;
+    height: 350px;
     width: 200%;
     transition: height 0.2s ease;
 }
@@ -78,7 +88,7 @@ body {
 }
 
 .container.active .forms {
-    height: 600px;
+    height: 500px;
 }
 
 .container .form .title {
@@ -100,7 +110,7 @@ body {
 
 .form .input-field {
     position: relative;
-    height: 50px;
+    height: 40px;
     width: 100%;
     margin-top: 30px;
 }
@@ -113,7 +123,7 @@ body {
     border: none;
     outline: none;
     font-size: 16px;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #5716e3;
     border-top: 2px solid transparent;
     transition: all 0.2s ease;
 }
@@ -197,38 +207,27 @@ body {
 }
 
 .form .login-signup {
-    margin-top: 30px;
+    margin-top: 25px;
     text-align: center;
 }
-
-
-.navbar {
+.nav{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #5716e3;
+    justify-content: space-between;
+    padding: 10px 0;
+}
 
-    padding: 1rem;
-    position: fixed; /* Fixed position */
-    top: 0; /* Stick to the top */
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensure it stays above other content */
+.logo{
+    width: 150px;
+    cursor: pointer;
 }
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    transition: background-color 0.3s;
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
 }
-.navbar a:hover {
-    background-color: #7766fc;
-}
-.logo {
-    margin-right: auto;
-}
-.logo img {
-    height: 40px; /* Adjust logo height */
-}
-.content {
-    padding-top: 80px; /* Adjust based on navbar height */
+nav ul li{
+    display: inline-block;
 }
