@@ -42,19 +42,6 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-.cont1{
-position: fixed;
-  top: 0;
-  width: 100%;
-  height: 75px;
-  overflow: hidden;
-  background-color: #969af2;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0;
-  
-
-}
 .container .forms {
     display: flex;
     align-items: center;
@@ -210,24 +197,21 @@ position: fixed;
     margin-top: 25px;
     text-align: center;
 }
-.nav{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-}
 
-.logo{
-    width: 150px;
-    cursor: pointer;
-}
-nav ul{
-    list-style: none;
-    width: 100%;
-    text-align: right;
-    padding-right: 60px;
-}
-nav ul li{
-    display: inline-block;
+.logo { 
+  width: 90px;
+  object-fit: cover;
+  position: relative;
+  }
+  .logo-text {
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow:
+        1px 1px 0 white,  
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white;;
+    color: #5716e3; 
+    position: absolute; 
+    left: 100px; top: 76px;
 }
