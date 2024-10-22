@@ -215,3 +215,34 @@ body {
     position: absolute; 
     left: 100px; top: 76px;
 }
+
+.button1 {
+    width: 390px;
+    height: 45px;
+    transition-duration: 0.2s;
+    background-color: #5716e3;
+    display: block;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 15px; /* added margin-bottom to create space between buttons */
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.div1 {
+    display: grid;
+    justify-content: space-around;
+}
+.button1:hover {
+        background-color: #7766fc;
+        /* Green */
+        color: rgb(255, 255, 255);
+}
+

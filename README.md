@@ -1,3 +1,4 @@
 # Rahul
-This is our mini project
+I-VOTE : Institutions Voting Online To Elect
+
 .
